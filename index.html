@@ -1,506 +1,66 @@
 <!doctype html>
-<!--
-  Compound Life — Support page
-  APP_FACTORY_X · app 007 · com.appfactoryx.compoundlife
-
-  Đây là trang Apple yêu cầu ở ô "Support URL". Apple đòi trang này phải
-  "dẫn tới thông tin liên hệ thực sự" — nên địa chỉ email phải ở lại.
-
-  CẦN SỬA TRƯỚC KHI PUBLISH:
-    1. Email liên hệ — tìm  lotuslongho@gmail.com  nếu muốn dùng địa chỉ khác.
-    2. Ngày cập nhật — tìm  2026-08-28
-  File tự chứa, không tải tài nguyên ngoài.
--->
-<html lang="en">
+<html lang="vi">
+<!-- Sinh từ 05_PUBLISHING/07_store_package/templates/website/index.html.tpl. Sửa PUBLISHING/_source/ rồi chạy render_package.py.
+     Không JavaScript, không tài nguyên tải từ domain ngoài, không công cụ theo dõi. -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Compound Life — Support</title>
-<meta name="description" content="Support and contact for Compound Life, an iPhone app that demonstrates compound interest. No account, no server, works offline.">
-<style>
-  :root{
-    --bg:#fbfaf8; --card:#ffffff; --ink:#1b1a19; --muted:#6b6862;
-    --line:#e7e3dc; --accent:#2f6f4e; --accent-soft:#eef4f0;
-    --radius:14px;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#17181a; --card:#1f2124; --ink:#eceae6; --muted:#a3a09a;
-      --line:#2e3134; --accent:#8fd0ab; --accent-soft:#20302a;
-    }
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-    padding:0 20px 80px;
-  }
-  .wrap{max-width:720px;margin:0 auto}
-  header{padding:52px 0 4px}
-  .eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-  h1{font-size:34px;line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
-  .tagline{font-size:18px;color:var(--muted);margin:0}
-  nav.langs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 34px;padding:0}
-  nav.langs button{
-    font:inherit;font-size:14px;cursor:pointer;
-    background:var(--card);color:var(--muted);
-    border:1px solid var(--line);border-radius:999px;padding:6px 14px;
-  }
-  nav.langs button[aria-current="true"]{background:var(--accent-soft);color:var(--accent);border-color:var(--accent);font-weight:600}
-  h2{font-size:20px;margin:40px 0 12px;letter-spacing:-.01em}
-  h3{font-size:16px;margin:0 0 6px}
-  p{margin:0 0 14px}
-  ul{margin:0 0 14px;padding-left:22px}
-  li{margin:0 0 7px}
-  a{color:var(--accent)}
-  .contact{
-    background:var(--accent-soft);border:1px solid var(--accent);border-radius:var(--radius);
-    padding:22px 24px;margin:0 0 10px;
-  }
-  .contact h2{margin:0 0 8px;color:var(--accent);font-size:19px}
-  .contact .mail{font-size:20px;font-weight:600;display:inline-block;margin:2px 0 12px;word-break:break-all}
-  .contact p:last-child{margin-bottom:0}
-  .qa{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin:0 0 12px}
-  .qa p:last-child{margin-bottom:0}
-  .meta{display:flex;flex-wrap:wrap;gap:8px 26px;padding:0;margin:0 0 14px;list-style:none;color:var(--muted);font-size:14px}
-  .meta li{margin:0}
-  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-  footer a{color:var(--muted)}
-  [data-lang]{display:none}
-  [data-lang].on{display:block}
-</style>
+<meta name="color-scheme" content="light dark">
+<title>Compound Life</title>
+<meta name="description" content="Đoán xem khoản để dành của bạn sẽ thành bao nhiêu. Rồi xem bạn đã đoán sai đến mức nào.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/icon.png">
 </head>
 <body>
-<div class="wrap">
-
-<header>
-  <p class="eyebrow">APP_FACTORY_X</p>
-  <h1>Compound Life</h1>
-  <p class="tagline" data-t="tagline">Support and contact</p>
+<header class="site">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36">Compound Life</a>
+  <nav>
+    <a href="support.html">Hỗ trợ</a>
+    <a href="privacy.html">Quyền riêng tư</a>
+    <a href="terms.html">Điều khoản</a>
+  </nav>
 </header>
+<main>
+  <section class="hero">
+    <img class="app-icon" src="assets/icon.png" alt="Biểu tượng Compound Life" width="128" height="128">
+    <h1>Compound Life</h1>
+    <p class="lead">What waiting and loans cost</p>
+    <p>Guess what your monthly saving becomes, then see the real number. New: enter a loan the way it was offered to you and see what a year of it really costs.</p>
+    <p class="store-note">Ứng dụng cho iPhone · sắp có trên App Store</p>
+  </section>
 
-<nav class="langs" aria-label="Language">
-  <button data-go="en" aria-current="true">English</button>
-  <button data-go="vi">Tiếng Việt</button>
-  <button data-go="zh">简体中文</button>
-  <button data-go="fr">Français</button>
-  <button data-go="pt">Português</button>
-</nav>
+  <section class="shots" aria-label="Ảnh màn hình">
+    <img src="assets/shot-01.jpg" alt="Ảnh màn hình ứng dụng 1" width="645" height="1402" loading="lazy">
+    <img src="assets/shot-02.jpg" alt="Ảnh màn hình ứng dụng 2" width="645" height="1402" loading="lazy">
+    <img src="assets/shot-03.jpg" alt="Ảnh màn hình ứng dụng 3" width="645" height="1402" loading="lazy">
+  </section>
 
-<!-- ══════════════════════════ ENGLISH ══════════════════════════ -->
-<main data-lang="en" class="on">
-
-  <div class="contact">
-    <h2>Get in touch</h2>
-    <a class="mail" href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>
-    <p>Questions, problems, or ideas — write in English or Vietnamese. Replies usually come within a few days.</p>
-    <p>If something went wrong, it helps to include: your iPhone model, your iOS version, the app version shown in <strong>Settings → About</strong>, and the language you were using.</p>
-  </div>
-
-  <h2>What this app is</h2>
-  <p>Compound Life is a three-screen demonstration of compound interest that asks you to guess before it answers. You set a monthly amount, a growth rate and a number of years; you commit to a number; the app shows you the real one, the gap between the two, and then what each year of delay would cost.</p>
-  <ul class="meta">
-    <li>iPhone · iOS 17 and later</li>
-    <li>Free · no in-app purchases</li>
-    <li>English · Tiếng Việt · 简体中文 · Français · Português</li>
-  </ul>
-
-  <h2>Common questions</h2>
-
-  <div class="qa">
-    <h3>Do I need an account?</h3>
-    <p>No. There is no sign-up, no login and no server. Everything works from the first launch.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Does it work without internet?</h3>
-    <p>Yes, completely — including on the very first launch. The app contains no networking code at all.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Why are all the amounts in Vietnamese đồng?</h3>
-    <p>The app has no exchange rate and never converts, in any language. What it demonstrates is a <em>ratio</em> — how much of the final figure was made by the money rather than by you — and that ratio is identical in every currency. The number you should watch is the gap between the two lines, not the unit.</p>
-  </div>
-
-  <div class="qa">
-    <h3>How do I change the language?</h3>
-    <p>Tap the gear on the first screen, then <strong>Language</strong>. The change applies immediately and is remembered.</p>
-    <p>One exception: the photo permission prompt follows your <em>iPhone's</em> language rather than the app's, because iOS resolves that text before the app runs.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Why does it ask for photo access?</h3>
-    <p>Only when you tap <strong>Save this picture</strong> on the third screen. The app asks for the narrowest access iOS offers: it can add one image and can never read anything already in your library. Declining disables nothing else.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Where is my data, and how do I delete it?</h3>
-    <p>On your iPhone, and nowhere else. <strong>Settings → Your data → Export my data</strong> shows you everything the app has stored. <strong>Reset the app</strong> erases all of it. Deleting the app does the same.</p>
-    <p>Full detail: <a href="privacy.html">Privacy Policy</a>.</p>
-  </div>
-
-  <div class="qa">
-    <h3>There's no recalculate button.</h3>
-    <p>Deliberate. The chart follows the sliders as you move them. Touch anywhere on the chart to read a single year.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Is this investment advice?</h3>
-    <p>No. The growth rate is an assumption you chose, and the app makes no claim that any such rate exists or will continue. Every screen showing a result says the same thing: this is a simulation, not a prediction, and not investment advice. For decisions about your own money, talk to someone qualified to advise you.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Is there an iPad or Android version?</h3>
-    <p>Not at present. Version 1.0 is an iPhone app, in portrait, on purpose.</p>
-  </div>
-
-  <h2>Reporting a problem</h2>
-  <p>Email the address above with what you saw and what you expected. Screenshots help. If the app behaved differently in one language than another, please say which.</p>
-
+  <section class="features" aria-label="Features">
+    <div class="card">
+      <h2>Guess first</h2>
+      <p>Set a monthly amount, a rate and a number of years, and commit to what you think it becomes. Then see the real figure, the gap, and a chart of interest taken out against interest left in.</p>
+    </div>
+    <div class="card">
+      <h2>What waiting costs</h2>
+      <p>Start one, three or five years later and see what waiting hands back and what it takes away.</p>
+    </div>
+    <div class="card">
+      <h2>The real price of a loan</h2>
+      <p>Enter a loan the way it was offered to you — equal instalments, a flat rate, a daily collection, so much per million per day, buying on instalments, borrow once and repay once — and see the real yearly rate, the total cost and the schedule.</p>
+    </div>
+    <div class="card">
+      <h2>The Seed Book</h2>
+      <p>Every scenario, loan and goal you looked at, kept on your phone, by week, month, quarter or year. Tap one to open it again.</p>
+    </div>
+    <div class="card">
+      <h2>No account, no network</h2>
+      <p>Everything stays on your iPhone. A calculation, not financial or legal advice.</p>
+    </div>
+  </section>
 </main>
-
-<!-- ══════════════════════════ TIẾNG VIỆT ══════════════════════════ -->
-<main data-lang="vi">
-
-  <div class="contact">
-    <h2>Liên hệ</h2>
-    <a class="mail" href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>
-    <p>Thắc mắc, trục trặc, hay ý tưởng — viết bằng tiếng Việt hoặc tiếng Anh đều được. Thường trả lời trong vài ngày.</p>
-    <p>Nếu có gì đó chạy sai, gửi kèm những thứ này sẽ giúp ích: dòng máy iPhone, phiên bản iOS, phiên bản ứng dụng hiện ở <strong>Cài đặt → Giới thiệu</strong>, và ngôn ngữ bạn đang dùng.</p>
-  </div>
-
-  <h2>Ứng dụng này là gì</h2>
-  <p>Compound Life là một minh hoạ ba màn hình về lãi kép, và nó bắt bạn đoán trước khi trả lời. Bạn đặt số tiền để dành mỗi tháng, một tỉ lệ tăng trưởng và số năm; bạn chốt một con số; ứng dụng cho bạn thấy con số thật, khoảng cách giữa hai con số, rồi cho thấy mỗi năm trì hoãn lấy đi của bạn bao nhiêu.</p>
-  <ul class="meta">
-    <li>iPhone · iOS 17 trở lên</li>
-    <li>Miễn phí · không mua trong ứng dụng</li>
-    <li>Tiếng Việt · English · 简体中文 · Français · Português</li>
-  </ul>
-
-  <h2>Câu hỏi thường gặp</h2>
-
-  <div class="qa">
-    <h3>Có cần tài khoản không?</h3>
-    <p>Không. Không đăng ký, không đăng nhập, không máy chủ. Mọi thứ chạy được ngay từ lần mở đầu tiên.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Không có mạng thì dùng được không?</h3>
-    <p>Được, hoàn toàn — kể cả ở lần mở đầu tiên. Ứng dụng không chứa một dòng mã mạng nào.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Sao mọi số tiền đều là đồng Việt Nam?</h3>
-    <p>Ứng dụng không có tỷ giá và không bao giờ quy đổi, ở bất kỳ ngôn ngữ nào. Thứ nó cho thấy là một <em>tỉ lệ</em> — bao nhiêu phần của con số cuối cùng là do tiền làm ra chứ không phải do bạn — và tỉ lệ đó giống hệt nhau ở mọi đồng tiền. Con số đáng nhìn là khoảng cách giữa hai đường, không phải đơn vị.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Đổi ngôn ngữ ở đâu?</h3>
-    <p>Chạm bánh răng ở màn hình đầu tiên, rồi chọn <strong>Ngôn ngữ</strong>. Đổi xong áp dụng ngay và được nhớ lại.</p>
-    <p>Một ngoại lệ: hộp thoại xin quyền Ảnh chạy theo ngôn ngữ của <em>iPhone</em> chứ không theo ngôn ngữ trong ứng dụng, vì iOS xử lý đoạn chữ đó trước khi ứng dụng chạy.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Sao ứng dụng xin quyền truy cập Ảnh?</h3>
-    <p>Chỉ khi bạn chạm <strong>Lưu tấm ảnh này</strong> ở màn hình thứ ba. Ứng dụng xin mức truy cập hẹp nhất mà iOS có: nó thêm được một tấm ảnh và không bao giờ đọc được bất cứ thứ gì đã có trong thư viện. Từ chối cũng không làm hỏng thứ gì khác.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Dữ liệu của tôi nằm ở đâu, xoá thế nào?</h3>
-    <p>Nằm trên iPhone của bạn, không ở đâu khác. <strong>Cài đặt → Dữ liệu của bạn → Xuất dữ liệu</strong> cho bạn xem mọi thứ ứng dụng đã lưu. <strong>Đặt lại ứng dụng</strong> xoá sạch. Gỡ ứng dụng cũng vậy.</p>
-    <p>Chi tiết đầy đủ: <a href="privacy.html">Chính sách quyền riêng tư</a>.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Không thấy nút tính lại.</h3>
-    <p>Cố ý. Biểu đồ chạy theo thanh trượt ngay khi bạn kéo. Chạm vào bất kỳ chỗ nào trên biểu đồ để đọc một năm cụ thể.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Đây có phải lời khuyên đầu tư không?</h3>
-    <p>Không. Tỉ lệ tăng trưởng là một giả định do bạn chọn, và ứng dụng không hề khẳng định mức lãi ấy có thật hay sẽ còn tiếp diễn. Mọi màn hình có kết quả đều nói cùng một câu: đây là mô phỏng, không phải dự báo, và không phải lời khuyên đầu tư. Với những quyết định về tiền của bạn, hãy nói chuyện với người đủ chuyên môn.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Có bản cho iPad hay Android không?</h3>
-    <p>Hiện chưa. Phiên bản 1.0 là ứng dụng iPhone, chỉ màn hình dọc, một cách có chủ ý.</p>
-  </div>
-
-  <h2>Báo lỗi</h2>
-  <p>Gửi email tới địa chỉ ở trên, kể lại bạn thấy gì và bạn mong đợi gì. Có ảnh chụp màn hình thì càng tốt. Nếu ứng dụng chạy khác nhau giữa hai ngôn ngữ, cho biết là ngôn ngữ nào.</p>
-
-</main>
-
-<!-- ══════════════════════════ 简体中文 ══════════════════════════ -->
-<main data-lang="zh">
-
-  <div class="contact">
-    <h2>联系我们</h2>
-    <a class="mail" href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>
-    <p>疑问、故障或建议 — 请用英文或越南文来信。通常几天内回复。</p>
-    <p>如果出了问题，附上这些会有帮助：iPhone 机型、iOS 版本、<strong>设置 → 关于</strong>里显示的应用版本，以及你当时使用的语言。</p>
-  </div>
-
-  <h2>这个应用是什么</h2>
-  <p>Compound Life 是一个三屏的复利演示，它要求你先猜，然后才回答。你设定每月存入的金额、增长率和年数；你定下一个数；应用给你看真实的那个数、两者之间的差距，接着告诉你每推迟一年会付出什么代价。</p>
-  <ul class="meta">
-    <li>iPhone · iOS 17 及以上</li>
-    <li>免费 · 无应用内购买</li>
-    <li>简体中文 · English · Tiếng Việt · Français · Português</li>
-  </ul>
-
-  <h2>常见问题</h2>
-
-  <div class="qa">
-    <h3>需要账号吗？</h3>
-    <p>不需要。没有注册、没有登录、没有服务器。首次打开就能用全部功能。</p>
-  </div>
-
-  <div class="qa">
-    <h3>没有网络能用吗？</h3>
-    <p>完全可以——包括第一次打开。应用里根本没有网络代码。</p>
-  </div>
-
-  <div class="qa">
-    <h3>为什么金额都是越南盾？</h3>
-    <p>应用没有汇率，在任何语言下都不换算。它展示的是一个<em>比例</em>——最后那个数字里有多少是钱自己挣的而不是你挣的——而这个比例在任何币种下都完全一样。值得看的是两条线之间的差距，不是单位。</p>
-  </div>
-
-  <div class="qa">
-    <h3>在哪里切换语言？</h3>
-    <p>点第一个屏幕上的齿轮，然后选<strong>语言</strong>。切换立即生效，并且会被记住。</p>
-    <p>有一个例外：照片权限提示跟随的是<em>你 iPhone 的</em>语言，而不是应用内的语言，因为 iOS 在应用运行之前就已经处理了那段文字。</p>
-  </div>
-
-  <div class="qa">
-    <h3>为什么会请求照片权限？</h3>
-    <p>只有在你点击第三屏的<strong>保存这张图片</strong>时才会请求。应用请求的是 iOS 提供的最窄权限：它能添加一张图片，永远读不到照片库里已有的任何内容。拒绝也不会让别的功能停止。</p>
-  </div>
-
-  <div class="qa">
-    <h3>我的数据在哪里，怎么删除？</h3>
-    <p>在你的 iPhone 上，不在别处。<strong>设置 → 你的数据 → 导出我的数据</strong>可以看到应用存的全部内容。<strong>重置应用</strong>会全部清除。删掉应用也一样。</p>
-    <p>完整说明：<a href="privacy.html">隐私政策</a>。</p>
-  </div>
-
-  <div class="qa">
-    <h3>找不到“重新计算”按钮。</h3>
-    <p>这是有意的。你拖动滑块时图表就跟着变。点图表上任意位置可以读出某一年的数值。</p>
-  </div>
-
-  <div class="qa">
-    <h3>这算投资建议吗？</h3>
-    <p>不算。增长率是你自己选的假设，应用并不主张这样的收益率真实存在或会持续下去。每个显示结果的屏幕都写着同一句话：这是模拟，不是预测，也不是投资建议。涉及你自己的钱的决定，请与真正有资格的人谈。</p>
-  </div>
-
-  <div class="qa">
-    <h3>有 iPad 版或安卓版吗？</h3>
-    <p>目前没有。1.0 版本是一个 iPhone 应用，仅竖屏，这是有意的选择。</p>
-  </div>
-
-  <h2>报告问题</h2>
-  <p>请写信到上面的邮箱，说明你看到了什么、你原本期待什么。附截图更好。如果应用在某一种语言下表现不同，请说明是哪一种。</p>
-
-</main>
-
-<!-- ══════════════════════════ FRANÇAIS ══════════════════════════ -->
-<main data-lang="fr">
-
-  <div class="contact">
-    <h2>Nous contacter</h2>
-    <a class="mail" href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>
-    <p>Questions, problèmes ou idées — écrivez en anglais ou en vietnamien. Réponse généralement sous quelques jours.</p>
-    <p>Si quelque chose n'a pas fonctionné, il est utile d'indiquer : votre modèle d'iPhone, votre version d'iOS, la version de l'application affichée dans <strong>Réglages → À propos</strong>, et la langue que vous utilisiez.</p>
-  </div>
-
-  <h2>Ce qu'est cette application</h2>
-  <p>Compound Life est une démonstration en trois écrans de l'intérêt composé, qui vous demande de deviner avant de répondre. Vous fixez une somme mensuelle, un taux de croissance et un nombre d'années ; vous vous engagez sur un chiffre ; l'application vous montre le vrai, l'écart entre les deux, puis ce que chaque année d'attente coûterait.</p>
-  <ul class="meta">
-    <li>iPhone · iOS 17 et versions ultérieures</li>
-    <li>Gratuite · aucun achat intégré</li>
-    <li>Français · English · Tiếng Việt · 简体中文 · Português</li>
-  </ul>
-
-  <h2>Questions fréquentes</h2>
-
-  <div class="qa">
-    <h3>Faut-il un compte ?</h3>
-    <p>Non. Ni inscription, ni connexion, ni serveur. Tout fonctionne dès le premier lancement.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Fonctionne-t-elle sans internet ?</h3>
-    <p>Entièrement, oui — y compris au tout premier lancement. L'application ne contient aucun code réseau.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Pourquoi tous les montants sont-ils en dongs vietnamiens ?</h3>
-    <p>L'application n'a aucun taux de change et ne convertit jamais, dans aucune langue. Ce qu'elle montre est un <em>rapport</em> — quelle part du chiffre final a été produite par l'argent plutôt que par vous — et ce rapport est identique dans toutes les devises. Le chiffre à regarder est l'écart entre les deux courbes, pas l'unité.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Comment changer la langue ?</h3>
-    <p>Touchez la roue dentée sur le premier écran, puis <strong>Langue</strong>. Le changement s'applique immédiatement et il est mémorisé.</p>
-    <p>Une exception : la demande d'autorisation photo suit la langue de <em>votre iPhone</em> et non celle de l'application, car iOS traite ce texte avant que l'application ne démarre.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Pourquoi demande-t-elle l'accès aux photos ?</h3>
-    <p>Uniquement lorsque vous touchez <strong>Enregistrer cette image</strong> sur le troisième écran. L'application demande l'accès le plus restreint qu'iOS propose : elle peut ajouter une image et ne peut jamais lire ce qui se trouve déjà dans votre photothèque. Refuser ne désactive rien d'autre.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Où sont mes données, et comment les supprimer ?</h3>
-    <p>Sur votre iPhone, et nulle part ailleurs. <strong>Réglages → Vos données → Exporter mes données</strong> vous montre tout ce que l'application a enregistré. <strong>Réinitialiser l'application</strong> efface tout. Supprimer l'application fait de même.</p>
-    <p>Détail complet : <a href="privacy.html">Politique de confidentialité</a>.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Il n'y a pas de bouton « recalculer ».</h3>
-    <p>C'est délibéré. Le graphique suit les curseurs pendant que vous les déplacez. Touchez le graphique n'importe où pour lire une année précise.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Est-ce un conseil en investissement ?</h3>
-    <p>Non. Le taux de croissance est une hypothèse que vous avez choisie, et l'application n'affirme nullement qu'un tel taux existe ou se maintiendra. Chaque écran affichant un résultat porte la même ligne : ceci est une simulation, ce n'est pas une prévision et ce n'est pas un conseil en investissement. Pour les décisions concernant votre argent, parlez à quelqu'un dont c'est le métier.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Existe-t-il une version iPad ou Android ?</h3>
-    <p>Pas pour l'instant. La version 1.0 est une application iPhone, en portrait, à dessein.</p>
-  </div>
-
-  <h2>Signaler un problème</h2>
-  <p>Écrivez à l'adresse ci-dessus en décrivant ce que vous avez vu et ce que vous attendiez. Les captures d'écran aident. Si l'application s'est comportée différemment dans une langue, précisez laquelle.</p>
-
-</main>
-
-<!-- ══════════════════════════ PORTUGUÊS ══════════════════════════ -->
-<main data-lang="pt">
-
-  <div class="contact">
-    <h2>Contacto</h2>
-    <a class="mail" href="mailto:lotuslongho@gmail.com">lotuslongho@gmail.com</a>
-    <p>Dúvidas, problemas ou ideias — escreva em inglês ou vietnamita. Normalmente há resposta dentro de alguns dias.</p>
-    <p>Se algo correu mal, ajuda incluir: o modelo do seu iPhone, a versão do iOS, a versão da aplicação mostrada em <strong>Definições → Acerca</strong>, e a língua que estava a usar.</p>
-  </div>
-
-  <h2>O que é esta aplicação</h2>
-  <p>O Compound Life é uma demonstração em três ecrãs dos juros compostos, que lhe pede um palpite antes de responder. Define uma quantia mensal, uma taxa de crescimento e um número de anos; compromete-se com um número; a aplicação mostra-lhe o verdadeiro, a diferença entre os dois, e depois quanto custaria cada ano de espera.</p>
-  <ul class="meta">
-    <li>iPhone · iOS 17 e posterior</li>
-    <li>Gratuita · sem compras dentro da aplicação</li>
-    <li>Português · English · Tiếng Việt · 简体中文 · Français</li>
-  </ul>
-
-  <h2>Perguntas frequentes</h2>
-
-  <div class="qa">
-    <h3>É preciso conta?</h3>
-    <p>Não. Não há registo, não há início de sessão, não há servidor. Tudo funciona logo na primeira abertura.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Funciona sem internet?</h3>
-    <p>Sim, por completo — incluindo na primeira abertura. A aplicação não contém qualquer código de rede.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Porque estão os valores todos em dongues vietnamitas?</h3>
-    <p>A aplicação não tem taxa de câmbio e nunca converte, em língua nenhuma. O que mostra é uma <em>proporção</em> — que parte do valor final foi feita pelo dinheiro e não por si — e essa proporção é idêntica em qualquer moeda. O número a observar é a distância entre as duas linhas, não a unidade.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Como mudo a língua?</h3>
-    <p>Toque na roda dentada no primeiro ecrã e escolha <strong>Língua</strong>. A mudança aplica-se de imediato e fica guardada.</p>
-    <p>Uma exceção: o pedido de permissão de fotografias segue a língua do <em>seu iPhone</em> e não a da aplicação, porque o iOS trata desse texto antes de a aplicação arrancar.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Porque pede acesso às fotografias?</h3>
-    <p>Só quando toca em <strong>Guardar esta imagem</strong> no terceiro ecrã. A aplicação pede o acesso mais estreito que o iOS oferece: pode acrescentar uma imagem e nunca consegue ler o que já está na sua biblioteca. Recusar não desativa mais nada.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Onde estão os meus dados, e como os apago?</h3>
-    <p>No seu iPhone, e em mais lado nenhum. <strong>Definições → Os seus dados → Exportar os meus dados</strong> mostra-lhe tudo o que a aplicação guardou. <strong>Repor a aplicação</strong> apaga tudo. Apagar a aplicação faz o mesmo.</p>
-    <p>Detalhe completo: <a href="privacy.html">Política de Privacidade</a>.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Não há botão de recalcular.</h3>
-    <p>É propositado. O gráfico segue os cursores enquanto os move. Toque em qualquer ponto do gráfico para ler um ano em concreto.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Isto é aconselhamento de investimento?</h3>
-    <p>Não. A taxa de crescimento é um pressuposto que escolheu, e a aplicação não afirma de forma alguma que tal taxa exista ou se mantenha. Todos os ecrãs com resultados trazem a mesma linha: isto é uma simulação, não é uma previsão e não é aconselhamento de investimento. Para decisões sobre o seu dinheiro, fale com alguém qualificado.</p>
-  </div>
-
-  <div class="qa">
-    <h3>Existe versão para iPad ou Android?</h3>
-    <p>De momento não. A versão 1.0 é uma aplicação para iPhone, na vertical, de propósito.</p>
-  </div>
-
-  <h2>Comunicar um problema</h2>
-  <p>Escreva para o endereço acima dizendo o que viu e o que esperava. Capturas de ecrã ajudam. Se a aplicação se comportou de forma diferente numa das línguas, diga qual.</p>
-
-</main>
-
 <footer>
-  <p>Compound Life · APP_FACTORY_X · <a href="privacy.html" data-t="privacy">Privacy Policy</a> · <span data-t="updated">Last updated</span> 2026-08-28</p>
+  <p>Cập nhật lần cuối: 19/10/2026 · © 2026 Dương Long Hồ ·
+    <a href="support.html">Hỗ trợ</a> · <a href="privacy.html">Quyền riêng tư</a> · <a href="terms.html">Điều khoản</a></p>
 </footer>
-
-</div>
-
-<script>
-(function(){
-  var T = {
-    en:{tagline:"Support and contact", privacy:"Privacy Policy",              updated:"Last updated",        lang:"en",      title:"Compound Life — Support"},
-    vi:{tagline:"Hỗ trợ và liên hệ",   privacy:"Chính sách quyền riêng tư",   updated:"Cập nhật lần cuối",   lang:"vi",      title:"Compound Life — Hỗ trợ"},
-    zh:{tagline:"支持与联系",           privacy:"隐私政策",                     updated:"最后更新",             lang:"zh-Hans", title:"Compound Life — 支持"},
-    fr:{tagline:"Assistance et contact",privacy:"Politique de confidentialité",updated:"Dernière mise à jour",lang:"fr",      title:"Compound Life — Assistance"},
-    pt:{tagline:"Apoio e contacto",     privacy:"Política de Privacidade",     updated:"Última atualização",  lang:"pt",      title:"Compound Life — Apoio"}
-  };
-  var buttons = document.querySelectorAll("nav.langs button");
-  function show(code){
-    if(!T[code]) code = "en";
-    document.querySelectorAll("[data-lang]").forEach(function(el){
-      el.classList.toggle("on", el.getAttribute("data-lang") === code);
-    });
-    buttons.forEach(function(b){
-      b.setAttribute("aria-current", b.getAttribute("data-go") === code ? "true" : "false");
-    });
-    document.querySelectorAll('[data-t]').forEach(function(el){
-      var k = el.getAttribute("data-t");
-      if(T[code][k]) el.textContent = T[code][k];
-    });
-    document.documentElement.lang = T[code].lang;
-    document.title = T[code].title;
-    try{ localStorage.setItem("cl-lang", code); }catch(e){}
-  }
-  buttons.forEach(function(b){
-    b.addEventListener("click", function(){
-      var c = b.getAttribute("data-go");
-      show(c);
-      history.replaceState(null, "", "#" + c);
-    });
-  });
-  function initial(){
-    var h = (location.hash || "").replace("#","");
-    if(T[h]) return h;
-    try{ var s = localStorage.getItem("cl-lang"); if(T[s]) return s; }catch(e){}
-    var n = (navigator.language || "en").toLowerCase();
-    if(n.indexOf("vi") === 0) return "vi";
-    if(n.indexOf("zh") === 0) return "zh";
-    if(n.indexOf("fr") === 0) return "fr";
-    if(n.indexOf("pt") === 0) return "pt";
-    return "en";
-  }
-  show(initial());
-})();
-</script>
-
 </body>
 </html>
